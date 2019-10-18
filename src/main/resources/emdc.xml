@@ -1,0 +1,31 @@
+<emdc>
+    <backup class="com.briup.bigdata.bd1903.project.emdc.backup.BackupImpl">
+        <rootPath>D:\\emdc</rootPath>
+        <clientSendEnvs>client_send_envs.bak</clientSendEnvs>
+        <gatheredLines>gathered_lines.bak</gatheredLines>
+        <storeEnvs>store_envs.bak</storeEnvs>
+    </backup>
+
+    <client class="com.briup.bigdata.bd1903.project.emdc.TcpClientServer.CilentImpl">
+        <ip>127.0.0.1</ip>
+
+    </client>
+
+    <server class="com.briup.bigdata.bd1903.project.emdc.TcpClientServer.ServiceImpl">
+        <port>45678</port>
+    </server>
+
+    <gather class="com.briup.bigdata.bd1903.project.emdc.gather.GatherImpl">
+        <radwtmp>E:/Study/BD1903/smart/smarthome-day1/radwtmp</radwtmp>
+    </gather>
+
+    <store class="com.briup.bigdata.bd1903.project.emdc.store.StoreImpl">
+        <driver>com.mysql.cj.jdbc.Driver</driver>
+        <url>jdbc:mysql://127.0.0.1:3306/emdc</url>
+        <user>root</user>
+        <password>123456</password>
+        <batchSize>1000</batchSize>
+    </store>
+
+
+</emdc>
